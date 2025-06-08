@@ -1,14 +1,9 @@
-import { IsNotEmpty, IsString } from "class-validator"
-import { Genre } from '../entities/movie.entity'; // adjust import if needed
-
-
+import { IsNotEmpty, IsString } from 'class-validator';
 
 export class MovieDto {
-    @IsString()
-    @IsNotEmpty()
-    title: string
-    @IsNotEmpty()
-    releaseYear: number
-
-    genre: Genre
+  @IsString()
+  @IsNotEmpty()
+  title: string;
+  @IsNotEmpty()
+  releaseYear: number;
 }
